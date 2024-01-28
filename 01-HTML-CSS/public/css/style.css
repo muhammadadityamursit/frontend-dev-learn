@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Definelah ukuran container dibawah ini */
+
+.container-app {
+  width: 100%;
+}
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+}
+
+/* Buatlah styling setiap section dibawah ini */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  object-fit: cover;
+  align-items: center;
+}
+
+.nav img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.banner img {
+  width: 100%;
+  height: 5rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 5px;
+}
+
+.content__top {
+  padding: 25px 5px;
+}
+
+.content__body {
+  padding: 22px;
+}
+
+.content__custom {
+  padding: 0 20px;
+}
+
+.content__custom p {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.content-education {
+  background-color: #eee;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 20px;
+  box-shadow: 3px 3px 3px rgb(139, 130, 130);
+}
+
+.content-photo {
+  margin: 0 auto;
+}
+
+.content-photo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+}
+
+.content-photo h2 {
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+}
+
+.blog-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 3px 3px 3px rgb(126, 118, 118);
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card div {
+  padding: 20px;
+}
+/* Buatlah breakpoint Resposnive design dibawah ini */
+
+@media only screen and (max-width: 780px) {
+  .container {
+    width: 100%;
+  }
+
+  .blog-section {
+    grid-template-columns: 1fr;
+  }
+
+  .content-education {
+    grid-template-columns: 1fr;
+  }
+}
